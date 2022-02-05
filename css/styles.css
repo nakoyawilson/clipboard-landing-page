@@ -1,8 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --font: "Bai Jamjuree", sans-serif;
+  --cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --light-gray: rgb(244, 246, 248);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  background-image: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  color: var(---dark-grayish-blue);
+  font-family: var(--font);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.4;
+}
+
+img,
+svg {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Section */
+
+.header {
+  margin: 7.75rem auto 0;
+  width: min(83%);
+}
+
+.header .logo {
+  width: 8rem;
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-weight: 600;
+  font-size: 1.75rem;
+  padding: 0 1rem;
+  margin: 4rem 0 1rem;
+}
+
+.paragraph {
+  color: var(--grayish-blue);
+  font-size: 1rem;
+  padding: 0 0.1rem;
+}
+
+.header .paragraph {
+  margin-bottom: 3rem;
+}
+
+.download-link {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ios,
+.mac {
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+.ios:hover,
+.mac:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.ios {
+  background-color: var(--cyan);
+  margin-bottom: 1.75rem;
+}
+
+.mac {
+  background-color: var(--light-blue);
+}
+
+/* Main Section */
+
+.subheading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.image-wrapper {
+  width: min(83%);
+  margin: 4.5rem auto 0;
+}
+
+.image {
+  width: 100%;
+}
+
+/* Snippets Section */
+
+.snippets {
+  width: min(83%);
+  margin: 9.5rem auto 0;
+}
+
+.snippets-features .feature {
+  margin: 3.5rem 0 1rem;
+}
+
+/* Access Section */
+
+.access {
+  margin: 12rem auto 0;
+  width: min(83%);
+}
+
+/* Workflow Section */
+
+.workflow {
+  margin: 8.5rem auto 0;
+  width: min(83%);
+}
+
+.workflow-features {
+  margin-top: 5rem;
+}
+
+.feature-icon {
+  margin: 3.75rem auto 2.75rem;
+}
+
+.workflow-features .feature {
+  margin-bottom: 1.75rem;
+}
+
+/* Companies Section */
+
+.companies {
+  margin: 8rem auto 0;
+  width: min(83%);
+}
+
+.company-logo {
+  margin: 0 auto 4rem;
+}
+
+.company-logo:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Call to Action Section */
+
+.call-to-action {
+  margin: 11rem auto 0;
+  width: min(83%);
+}
+
+.call-to-action .paragraph {
+  padding: 0 0.5rem;
+  margin-bottom: 3rem;
+}
+
 /* Footer Section */
+
+.footer {
+  background-color: var(--light-gray);
+  margin-top: 13.5rem;
+}
+
+.footer .logo {
+  width: 3.5rem;
+  margin: 0 auto;
+  padding: 3.5rem 0 3rem;
+}
+
+.container {
+  width: min(83%);
+  margin-inline: auto;
+}
+
+.footer-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.footer-link:hover {
+  color: var(--cyan);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 3.25rem 0;
+}
+
+.social-icon {
+  fill: var(---dark-grayish-blue);
+}
+
+.social-icon-wrapper:hover {
+  cursor: pointer;
+}
+
+.social-icon-wrapper:hover .social-icon {
+  fill: var(--cyan);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--cyan);
 }
